@@ -10,7 +10,7 @@
 (function (global) {
   'use strict';
   var ODUSOBIAD_MESSAGES = {
-    version: '3.0',
+    version: '3.1',
     journal: {
       name: 'Ordu Üniversitesi Sosyal Bilimler Araştırmaları Dergisi',
       abbr: 'ODÜSOBİAD',
@@ -265,6 +265,66 @@ Saygılarımızla, ODÜSOBİAD Editörlüğü`
         body: {
           en: `Dear author(s), manuscripts must undergo academic editing by an independent organization. This includes correcting structural/grammar issues, reformatting citations and references to APA 7, and adapting tables/figures to journal standards. Proofreading and a QR-coded certificate are mandatory for English manuscripts.`,
           tr: `Değerli yazar(lar), yayın sürecine alınacak çalışmaların bağımsız editing kuruluşlarına akademik redaksiyon yaptırılması gerekmektedir. Kapsam: anlatım bozukluklarının giderilmesi, yazım ve noktalama düzeltmeleri, metin içi atıf ve kaynakçanın APA 7'ye uygun hâle getirilmesi, tablo/grafik/görsellerin dergi kurallarına uyarlanması. Çalışma İngilizce ise proofreading ve karekodlu sertifika zorunludur.`
+        }
+      },
+
+      {
+        id: 'b0', role: 'eic', stage: 'decision',
+        cope: false, scopus: false,
+        title: { en: 'Acceptance — Unconditional + Proofreading', tr: 'Kabul — Koşulsuz + Son Okuma' },
+        subject: {
+          en: 'Manuscript Accepted — ODÜSOBİAD [Ref: {ID}]',
+          tr: 'Makale Kabul Edildi — ODÜSOBİAD [Ref: {ID}]'
+        },
+        body: {
+          en: `Dear Author(s),
+
+We are pleased to inform you that your manuscript titled "[Manuscript Title]" (No: [XXXXXXX]) has been accepted for publication in ODÜSOBİAD following the peer review and editorial evaluation process. Congratulations on this achievement.
+
+Before proceeding to the publication stage, please complete the following proofreading and final preparation steps:
+
+1. Download the current version of your manuscript and format it according to the journal template.
+2. Add/update author personal details and ORCID links.
+3. If derived from a thesis or conference paper, include the relevant note per the template.
+4. Include conflict of interest statement and acknowledgements.
+5. Review and correct all in-text citations and references in accordance with APA 7.
+6. Update abstract, title and metadata (EN–TR order).
+7. Arrange English proofreading from an independent institution and upload the verifiable QR-coded proofreading certificate.
+8. Upload the tracked-changes file showing all corrections made.
+
+Please also send your updated APA 7 reference list as a separate Word document (one blank line between entries) including your manuscript ID to odusobiaddergi@gmail.com.
+
+Important: The journal is not responsible for author-related errors identified after publication. Post-publication correction requests will not be accepted.
+
+Please upload all required files to the system within [__] days.
+
+Sincerely,
+ODÜSOBİAD Editorial Office
+dergipark.org.tr/odusobiad`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makalenizin (No: [XXXXXXX]) hakem değerlendirmesi ve editöryal inceleme süreci tamamlanmış olup makaleniz ODÜSOBİAD'da yayımlanmak üzere kabul edilmiştir. Bu başarı için sizi tebrik ederiz.
+
+Yayın aşamasına geçilmeden önce aşağıdaki son okuma ve nihai hazırlık adımlarını tamamlamanızı rica ederiz:
+
+1. Makalenizin güncel versiyonunu indirip güncel makale şablonuna uygun olacak şekilde düzenleyiniz.
+2. Yazar kişisel bilgilerini ve ORCID bağlantılarını ekleyiniz/güncelleyiniz.
+3. Makaleniz tezden veya bildiriden üretilmişse bu bilgiyi şablon kurallarına uygun biçimde belirtiniz.
+4. Çıkar çatışması ve teşekkür bilgilerini ekleyiniz.
+5. Metin içi atıflarınızı ve kaynakçanızı APA 7 kurallarına uygun biçimde gözden geçirip düzenleyiniz.
+6. Makalenin İngilizce–Türkçe sıralamasına dikkat ederek özet, başlık ve üst verilerini güncelleyiniz.
+7. Makalenizin İngilizce versiyonunu bağımsız bir kurumdan proofreading yaptırınız ve doğrulanabilir karekodlu proofreading sertifikasını sisteme yükleyiniz.
+8. Yapılan düzeltmelerin izlendiği (Track Changes) dosyayı revize makaleyle birlikte sisteme yükleyiniz.
+
+Ayrıca makalenizin güncel kaynakçasını APA 7'ye uygun olarak, aralarında birer satır boşluk bırakarak ayrı bir Word dosyası hâlinde makale ID numarasını da yazarak odusobiaddergi@gmail.com adresine iletiniz.
+
+Önemli Not: Sayı yayımlandıktan sonra fark edilen yazar kaynaklı hatalardan editör ve dergimiz sorumlu değildir. Bu nedenle yayım sonrası düzeltme talepleri kabul edilmeyecektir.
+
+Lütfen gerekli tüm dosyaları [__] gün içinde sisteme yükleyiniz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü
+dergipark.org.tr/odusobiad`
         }
       },
 
@@ -969,7 +1029,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
     </div>
     <div class="header-divider"></div>
     <div class="header-title">Editöryal Mesaj Bankası</div>
-    <span class="header-ver">v3.0 · 36 Şablon</span>
+    <span class="header-ver">v3.1 · 37 Şablon</span>
     <div class="lang-toggle" id="langToggle">
       <button class="lang-btn" data-lang="en">EN</button>
       <button class="lang-btn active" data-lang="tr">TR</button>
