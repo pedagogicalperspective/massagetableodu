@@ -10,7 +10,7 @@
 (function (global) {
   'use strict';
   var ODUSOBIAD_MESSAGES = {
-    version: '3.1',
+    version: '3.2',
     journal: {
       name: 'Ordu Üniversitesi Sosyal Bilimler Araştırmaları Dergisi',
       abbr: 'ODÜSOBİAD',
@@ -99,6 +99,104 @@ Sincerely, ODÜSOBİAD Editorial Office`,
           tr: `Sayın Yazar(lar),
 
 "[Makale Başlığı]" başlıklı makalenizin (No: [XXXXXXX]) editoryal değerlendirmesi tamamlanmıştır. Süreç Dosyaları bölümündeki belgeler doğrultusunda düzeltmeleri yaparak revize makalenizi [__] gün içinde sisteme yükleyiniz.
+
+Saygılarımızla, ODÜSOBİAD Editörlüğü`
+        }
+      },
+
+      {
+        id: 'a1c', role: 'eic', stage: 'desk',
+        cope: false, scopus: false,
+        title: { en: 'Editorial Evaluation — Rejection (Standard)', tr: 'Editoryal Değerlendirme Sonucu — Ret (Standart)' },
+        subject: {
+          en: 'Editorial Evaluation Result — Rejection — ODÜSOBİAD [Ref: {ID}]',
+          tr: 'Editoryal Değerlendirme Sonucu — Ret — ODÜSOBİAD [Ref: {ID}]'
+        },
+        body: {
+          en: `Dear Author(s),
+
+The preliminary editorial evaluation of "[Manuscript Title (EN)]" (Manuscript No: [XXXXXXX]) has been completed.
+
+After a careful review by the editorial board, we regret to inform you that your manuscript has not been found suitable for the peer review process and has therefore been rejected at the editorial evaluation stage.
+
+The Editorial Evaluation Report and Decision Letter detailing the reasons for this decision have been uploaded to the Process Files section of your manuscript page on DergiPark.
+
+The decision is based on the following reason(s):
+
+☐ The manuscript falls outside the thematic scope of ODÜSOBİAD.
+☐ The manuscript does not comply with the journal template and formatting requirements.
+☐ The similarity rate exceeds the journal's accepted threshold (Total ≤20%, Single source ≤3%).
+☐ There are significant concerns regarding methodological rigour and/or academic quality.
+☐ The language quality requires substantial improvement prior to peer review.
+☐ The manuscript does not meet the minimum 4,000-word or exceeds the 9,000-word / 30-page limit.
+☐ Required documents are missing (ethics approval, title page, cover letter, etc.).
+☐ APA 7 citation and referencing standards have not been adequately followed.
+☐ The English title, abstract, and/or keywords do not meet academic language standards (SCOPUS requirement).
+☐ Other: ___________________________________
+
+Please note that this decision does not constitute a judgment on the scientific merit of your research. We encourage you to carefully review the Decision Letter and consider submitting to a more suitable publication after making the necessary revisions.
+
+Should you have any questions regarding this decision, please contact us at odusobiad@odu.edu.tr.
+
+We thank you for your interest in ODÜSOBİAD and wish you every success with your research.
+
+Sincerely,
+ODÜSOBİAD Editorial Office
+dergipark.org.tr/odusobiad`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı (TR)]" başlıklı makalenizin (Makale No: [XXXXXXX]) ön editoryal değerlendirmesi tamamlanmıştır.
+
+Editör kurulu tarafından yapılan inceleme sonucunda makalenizin hakem değerlendirme sürecine alınmasının uygun olmadığına karar verilmiş olup makale editoryal değerlendirme aşamasında reddedilmiştir.
+
+Red gerekçelerini içeren Editoryal Değerlendirme Raporu ve Karar Mektubu, DergiPark'taki makale sayfanızın Süreç Dosyaları bölümüne eklenmiştir.
+
+Bu karar aşağıdaki gerekçe(ler)e dayalı olarak verilmiştir:
+
+☐ Makale, ODÜSOBİAD'ın tematik kapsam alanı dışında kalmaktadır.
+☐ Makale, dergi şablonuna ve biçimlendirme gerekliliklerine uygun değildir.
+☐ Benzerlik oranı derginin kabul ettiği eşik değerin üzerindedir (Toplam ≤%20, Tek kaynak ≤%3).
+☐ Yöntemsel titizlik ve/veya akademik kalite açısından ciddi kaygılar mevcuttur.
+☐ Makalenin dil kalitesinin hakeme gönderilmeden önce önemli ölçüde geliştirilmesi gerekmektedir.
+☐ Makale asgari 4.000 kelime şartını karşılamamaktadır veya 9.000 kelime / 30 sayfa sınırını aşmaktadır.
+☐ Gerekli belgeler eksiktir (etik kurul onayı, başlık sayfası, kapak mektubu vb.).
+☐ APA 7 atıf ve kaynak gösterme standartlarına yeterince uyulmamıştır.
+☐ İngilizce başlık, özet ve/veya anahtar kelimeler akademik dil standartlarını karşılamamaktadır (SCOPUS gereksinimi).
+☐ Diğer: ___________________________________
+
+Bu kararın araştırmanızın bilimsel değerine ilişkin herhangi bir yargıyı yansıtmadığını belirtmek isteriz. Karar Mektubunu dikkatle incelemenizi ve gerekli düzeltmeleri yaptıktan sonra daha uygun bir dergiye göndermeyi değerlendirmenizi öneririz.
+
+Bu kararla ilgili sorularınız için odusobiad@odu.edu.tr adresinden bizimle iletişime geçebilirsiniz.
+
+ODÜSOBİAD'a gösterdiğiniz ilgi için teşekkür eder, çalışmalarınızda başarılar dileriz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü
+dergipark.org.tr/odusobiad`
+        }
+      },
+
+      {
+        id: 'a1d', role: 'eic', stage: 'desk',
+        cope: false, scopus: false,
+        title: { en: 'Editorial Evaluation — Rejection (Short)', tr: 'Editoryal Değerlendirme Sonucu — Ret (Kısa)' },
+        subject: {
+          en: 'Editorial Evaluation Result — Rejection — ODÜSOBİAD [Ref: {ID}]',
+          tr: 'Editoryal Değerlendirme Sonucu — Ret — ODÜSOBİAD [Ref: {ID}]'
+        },
+        body: {
+          en: `Dear Author(s),
+
+The editorial evaluation of "[Manuscript Title]" (No: [XXXXXXX]) has been completed. Following the assessment, your manuscript has been rejected at the editorial stage and will not proceed to peer review. The Decision Letter with the reasons for rejection has been uploaded to the Process Files section.
+
+We wish you success with your research.
+
+Sincerely, ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makalenizin (No: [XXXXXXX]) editoryal değerlendirmesi tamamlanmıştır. Yapılan inceleme sonucunda makaleniz editoryal aşamada reddedilmiş olup hakem sürecine alınmayacaktır. Red gerekçelerini içeren Karar Mektubu Süreç Dosyaları bölümüne eklenmiştir.
+
+Çalışmalarınızda başarılar dileriz.
 
 Saygılarımızla, ODÜSOBİAD Editörlüğü`
         }
@@ -1029,7 +1127,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
     </div>
     <div class="header-divider"></div>
     <div class="header-title">Editöryal Mesaj Bankası</div>
-    <span class="header-ver">v3.1 · 37 Şablon</span>
+    <span class="header-ver">v3.2 · 39 Şablon</span>
     <div class="lang-toggle" id="langToggle">
       <button class="lang-btn" data-lang="en">EN</button>
       <button class="lang-btn active" data-lang="tr">TR</button>
