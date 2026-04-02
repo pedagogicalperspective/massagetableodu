@@ -10,9 +10,9 @@
 (function (global) {
   'use strict';
   var ODUSOBIAD_MESSAGES = {
-    version: '3.2',
+    version: '3.3',
     journal: {
-      name: 'Ordu Üniversitesi Sosyal Bilimler Araştırmaları Dergisi',
+      name: 'Ordu Üniversitesi Sosyal Bilimler Enstitüsü Sosyal Bilimler Araştırmaları Dergisi',
       abbr: 'ODÜSOBİAD',
       doi: '10.48146/odusobiad',
       email: 'odusobiad@odu.edu.tr',
@@ -255,36 +255,60 @@ ODÜSOBİAD Editörlüğü`
         body: {
           en: `Dear Author(s),
 
-Please download your manuscript and make the following updates in accordance with the journal template:
+Please download the current version of your manuscript and make the following updates in accordance with the journal template:
 
-- Author details and ORCID links
-- Thesis/conference origin note if applicable
-- Conflict of interest and acknowledgements
-- In-text citations and references (APA 7)
-- Abstract, title and metadata (EN-TR order)
+1. Author personal details and ORCID links (ORCID must be embedded as a clickable link in the template).
+2. If derived from a thesis or conference paper, include the relevant note per the template.
+3. Conflict of interest, funding statement, and acknowledgements.
+4. In-text citations and references (APA 7).
+5. Abstract, title and metadata (English–Turkish order).
+6. Update the DergiPark metadata fields to match the manuscript file.
 
-Additionally, please arrange an English proofreading from an independent institution and upload the QR-coded certificate and tracked-changes file.
+BILINGUAL PUBLICATION & PROOFREADING (Mandatory):
+As of March 2025 (Vol. 15, No. 1), all issues are published simultaneously in Turkish and English. After acceptance, authors are required to:
+— Have the English version proofread by an independent institution/organization;
+— Upload a verifiable QR-coded proofreading certificate to the system;
+— Upload the tracked-changes (Track Changes) file showing all corrections.
 
-Note: The journal is not responsible for author-related errors identified after publication.
+⚠ IMPORTANT: Failure to complete this process may result in the manuscript not receiving a DOI number, even if it has been accepted after peer review. Authors submitting manuscripts should take this into account.
+
+Please also send your updated APA 7 reference list as a separate Word document (one blank line between entries) including your manuscript ID to odusobiaddergi@gmail.com.
+
+Note: The journal is not responsible for author-related errors identified after publication. Post-publication correction requests will not be accepted.
+
+Please upload all required files within [__] days.
 
 Sincerely,
-ODÜSOBİAD Editorial Office`,
+ODÜSOBİAD Editorial Office
+dergipark.org.tr/odusobiad`,
           tr: `Sayın Yazar(lar),
 
 Makalenizin güncel versiyonunu indirip güncel makale şablonuna uygun olacak şekilde aşağıdaki düzenlemeleri yapmanızı rica ederiz:
 
-- Yazar kişisel bilgileri ve ORCID bağlantıları
-- Tezden/bildiriden üretilmişse ilgili bilgi
-- Çıkar çatışması ve teşekkür ifadesi
-- Metin içi atıflar ve kaynakça (APA 7)
-- Özet, başlık ve üst veriler (İngilizce–Türkçe sıralamasına dikkat)
+1. Yazar kişisel bilgileri ve ORCID bağlantıları (ORCID şablondaki görsele tıklanabilir bağlantı olarak eklenmelidir).
+2. Makaleniz tezden veya bildiriden üretilmişse bu bilgiyi şablon kurallarına uygun biçimde belirtiniz.
+3. Çıkar çatışması, finansman beyanı ve teşekkür ifadesi.
+4. Metin içi atıflar ve kaynakça (APA 7).
+5. Özet, başlık ve üst veriler (İngilizce–Türkçe sıralamasına dikkat).
+6. DergiPark üst veri alanlarını makale dosyasıyla tutarlı hâle getiriniz.
 
-Ayrıca bağımsız bir kurumdan karekodlu proofreading sertifikası ile değişikliklerin izlendiği dosyayı revize makaleyle birlikte sisteme yüklemenizi bekliyoruz.
+ÇİFT DİLLİ YAYIM VE PROOFREADING (Zorunlu):
+2025 yılı Mart sayısından (Cilt 15, Sayı 1) itibaren sayılar eş zamanlı olarak Türkçe ve İngilizce yayımlanmaktadır. Kabul sonrasında yazarların:
+— Makalenin İngilizce versiyonunu bağımsız bir kurum/kuruluşa proofreading yaptırması;
+— Doğrulanabilir karekodlu proofreading sertifikasını sisteme yüklemesi;
+— Yapılan düzeltmelerin izlendiği (Track Changes / Değişiklikleri İzle) dosyayı sisteme yüklemesi gerekmektedir.
 
-Not: Sayı yayımlandıktan sonra fark edilen yazar kaynaklı hatalardan dergimiz sorumlu değildir.
+⚠ ÖNEMLİ: Bu sürecin tamamlanmaması hâlinde makale hakem değerlendirmesinden kabul alsa dahi DOI numarası verilmeyebilir. Makale gönderecek yazarların bu durumu göz önünde bulundurmaları gerekmektedir.
+
+Ayrıca makalenizin güncel kaynakçasını APA 7'ye uygun olarak, aralarında birer satır boşluk bırakarak ayrı bir Word dosyası hâlinde makale ID numarasını da yazarak odusobiaddergi@gmail.com adresine iletiniz.
+
+Not: Sayı yayımlandıktan sonra fark edilen yazar kaynaklı hatalardan editör ve dergimiz sorumlu değildir. Yayım sonrası düzeltme talepleri kabul edilmeyecektir.
+
+Lütfen gerekli tüm dosyaları [__] gün içinde sisteme yükleyiniz.
 
 Saygılarımızla,
-ODÜSOBİAD Editörlüğü`
+ODÜSOBİAD Editörlüğü
+dergipark.org.tr/odusobiad`
         }
       },
 
@@ -347,8 +371,44 @@ Saygılarımızla, ODÜSOBİAD Editörlüğü`
           tr: 'İngilizce Yayım Politikası Bilgilendirmesi — ODÜSOBİAD [Ref: {ID}]'
         },
         body: {
-          en: `Dear author, pursuant to the institutional board decision, manuscripts uploaded after 05.01.2024 will be published in English, or bilingually, starting from March 2025. Please translate, proofread, and upload the tracked-changes Word file and proofreading certificate. Best regards.`,
-          tr: `Sayın yazar, enstitü yönetim kurulu kararı gereği 05.01.2024 tarihinden sonra yüklenen makaleler 2025 yılı Mart sayısından itibaren İngilizce veya hem İngilizce hem Türkçe yayımlanacaktır. Makalenizi İngilizceye çevirip proofreading yaptırdıktan sonra "değişiklikleri izle" açık Word dosyasını ve proofreading belgesini sisteme yüklemeniz gerekmektedir. İyi çalışmalar dileriz.`
+          en: `Dear Author(s),
+
+We would like to inform you about ODÜSOBİAD's bilingual publication policy.
+
+As of March 2025 (Vol. 15, No. 1), all issues are published simultaneously in Turkish and English. In accordance with this policy:
+
+— After the peer review process, accepted manuscripts must be translated into English by the author(s).
+— The English version must be proofread by an independent institution/organization.
+— A verifiable coded certificate/document and a tracked-changes file must be uploaded to the journal system.
+— Manuscripts submitted in a foreign language other than English must include a Turkish full text; otherwise, the manuscript will not be considered for evaluation.
+— English full-text submissions will undergo a preliminary language assessment; manuscripts found linguistically insufficient will be rejected.
+
+⚠ IMPORTANT: Failure to complete this process may result in the manuscript not receiving a DOI number, even if it has been accepted after peer review.
+
+If you have any questions regarding this policy, please do not hesitate to contact us.
+
+Sincerely,
+ODÜSOBİAD Editorial Office
+dergipark.org.tr/odusobiad`,
+          tr: `Sayın Yazar(lar),
+
+ODÜSOBİAD'ın çift dilli yayın politikası hakkında sizi bilgilendirmek istiyoruz.
+
+2025 yılı Mart sayısından (Cilt 15, Sayı 1) itibaren dergimiz eş zamanlı olarak Türkçe ve İngilizce yayımlanmaktadır. Bu politika gereğince:
+
+— Değerlendirme sürecinden sonra kabul alan makalelerin İngilizceye çevrilmesi yazar(lar) tarafından yaptırılmalıdır.
+— Makalenin İngilizce versiyonunun bağımsız bir kurum/kuruluşa proofreading yaptırılması zorunludur.
+— Doğrulanabilir kodlu sertifika/belge ve değişikliklerin izlenebildiği belgenin dergi sistemine yüklenmesi gerekmektedir.
+— İngilizce dışındaki yabancı dillerde gönderilen yazılarda Türkçe tam metin bulunmalıdır; aksi hâlde yazı değerlendirmeye alınmayacaktır.
+— İngilizce tam metin gönderilen yazılar, dil yeterliliği ve uygunluk açısından ön değerlendirmeye tabi tutulacaktır; dil yönünden uygun bulunmayan çalışmalar reddedilecektir.
+
+⚠ ÖNEMLİ: Bu sürecin tamamlanmaması hâlinde makale hakem değerlendirmesinden kabul alsa dahi DOI numarası verilmeyebilir.
+
+Bu politika hakkında sorularınız varsa lütfen bizimle iletişime geçmekten çekinmeyiniz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü
+dergipark.org.tr/odusobiad`
         }
       },
 
@@ -361,8 +421,40 @@ Saygılarımızla, ODÜSOBİAD Editörlüğü`
           tr: 'Akademik Redaksiyon Talebi — ODÜSOBİAD [Ref: {ID}]'
         },
         body: {
-          en: `Dear author(s), manuscripts must undergo academic editing by an independent organization. This includes correcting structural/grammar issues, reformatting citations and references to APA 7, and adapting tables/figures to journal standards. Proofreading and a QR-coded certificate are mandatory for English manuscripts.`,
-          tr: `Değerli yazar(lar), yayın sürecine alınacak çalışmaların bağımsız editing kuruluşlarına akademik redaksiyon yaptırılması gerekmektedir. Kapsam: anlatım bozukluklarının giderilmesi, yazım ve noktalama düzeltmeleri, metin içi atıf ve kaynakçanın APA 7'ye uygun hâle getirilmesi, tablo/grafik/görsellerin dergi kurallarına uyarlanması. Çalışma İngilizce ise proofreading ve karekodlu sertifika zorunludur.`
+          en: `Dear Author(s),
+
+Manuscripts accepted for publication in ODÜSOBİAD must undergo academic editing by an independent editing organization. The scope of academic editing includes:
+
+— Correcting structural issues, grammar, and expression errors
+— Spelling and punctuation corrections
+— Reformatting in-text citations and references to APA 7
+— Adapting tables, figures, and visuals to journal standards
+
+For English manuscripts, proofreading by an independent institution is mandatory. A verifiable QR-coded certificate must be obtained and uploaded to the system together with the tracked-changes file.
+
+⚠ IMPORTANT: Failure to complete this process may result in the manuscript not receiving a DOI number, even if it has been accepted.
+
+Note: ODÜSOBİAD does not recommend any specific editing organization or company. Authors are free to choose any independent provider that delivers quality work and provides a verifiable certificate.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Değerli Yazar(lar),
+
+ODÜSOBİAD'da yayın sürecine alınacak çalışmaların bağımsız editing kuruluşlarına akademik redaksiyon yaptırılması gerekmektedir. Akademik redaksiyon kapsamı:
+
+— Anlatım bozukluklarının giderilmesi, dilbilgisi ve ifade hatalarının düzeltilmesi
+— Yazım ve noktalama düzeltmeleri
+— Metin içi atıf ve kaynakçanın APA 7'ye uygun hâle getirilmesi
+— Tablo, grafik ve görsellerin dergi kurallarına uyarlanması
+
+İngilizce çalışmalar için bağımsız bir kurumdan proofreading yaptırılması zorunludur. Doğrulanabilir karekodlu sertifika alınmalı ve değişikliklerin izlendiği dosya ile birlikte sisteme yüklenmelidir.
+
+⚠ ÖNEMLİ: Bu sürecin tamamlanmaması hâlinde makale kabul alsa dahi DOI numarası verilmeyebilir.
+
+Not: Dergimiz tarafsız olmak adına herhangi bir editing kuruluşu veya şirket önermemektedir. Yazarlar; işini iyi ve uygun fiyata yapan, yapılan düzeltmelerin izlenebildiği ve doğrulanabilir kodlu sertifika sunan bağımsız bir kuruluşu tercih edebilir.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü`
         }
       },
 
@@ -382,17 +474,20 @@ We are pleased to inform you that your manuscript titled "[Manuscript Title]" (N
 Before proceeding to the publication stage, please complete the following proofreading and final preparation steps:
 
 1. Download the current version of your manuscript and format it according to the journal template.
-2. Add/update author personal details and ORCID links.
+2. Add/update author personal details and ORCID links (ORCID must be embedded as a clickable link).
 3. If derived from a thesis or conference paper, include the relevant note per the template.
-4. Include conflict of interest statement and acknowledgements.
+4. Include conflict of interest statement, funding statement, and acknowledgements.
 5. Review and correct all in-text citations and references in accordance with APA 7.
 6. Update abstract, title and metadata (EN–TR order).
-7. Arrange English proofreading from an independent institution and upload the verifiable QR-coded proofreading certificate.
+7. Have the English version proofread by an independent institution and upload the verifiable QR-coded proofreading certificate.
 8. Upload the tracked-changes file showing all corrections made.
+9. Update the DergiPark metadata fields to match the manuscript file.
 
 Please also send your updated APA 7 reference list as a separate Word document (one blank line between entries) including your manuscript ID to odusobiaddergi@gmail.com.
 
-Important: The journal is not responsible for author-related errors identified after publication. Post-publication correction requests will not be accepted.
+⚠ IMPORTANT: Failure to complete the proofreading process (certificate + tracked-changes file) may result in the manuscript not receiving a DOI number. Authors are kindly requested to take this into account.
+
+Note: The journal is not responsible for author-related errors identified after publication. Post-publication correction requests will not be accepted.
 
 Please upload all required files to the system within [__] days.
 
@@ -406,17 +501,20 @@ dergipark.org.tr/odusobiad`,
 Yayın aşamasına geçilmeden önce aşağıdaki son okuma ve nihai hazırlık adımlarını tamamlamanızı rica ederiz:
 
 1. Makalenizin güncel versiyonunu indirip güncel makale şablonuna uygun olacak şekilde düzenleyiniz.
-2. Yazar kişisel bilgilerini ve ORCID bağlantılarını ekleyiniz/güncelleyiniz.
+2. Yazar kişisel bilgilerini ve ORCID bağlantılarını ekleyiniz/güncelleyiniz (ORCID tıklanabilir bağlantı olarak eklenmelidir).
 3. Makaleniz tezden veya bildiriden üretilmişse bu bilgiyi şablon kurallarına uygun biçimde belirtiniz.
-4. Çıkar çatışması ve teşekkür bilgilerini ekleyiniz.
+4. Çıkar çatışması, finansman beyanı ve teşekkür bilgilerini ekleyiniz.
 5. Metin içi atıflarınızı ve kaynakçanızı APA 7 kurallarına uygun biçimde gözden geçirip düzenleyiniz.
 6. Makalenin İngilizce–Türkçe sıralamasına dikkat ederek özet, başlık ve üst verilerini güncelleyiniz.
 7. Makalenizin İngilizce versiyonunu bağımsız bir kurumdan proofreading yaptırınız ve doğrulanabilir karekodlu proofreading sertifikasını sisteme yükleyiniz.
 8. Yapılan düzeltmelerin izlendiği (Track Changes) dosyayı revize makaleyle birlikte sisteme yükleyiniz.
+9. DergiPark üst veri alanlarını makale dosyasıyla tutarlı hâle getiriniz.
 
 Ayrıca makalenizin güncel kaynakçasını APA 7'ye uygun olarak, aralarında birer satır boşluk bırakarak ayrı bir Word dosyası hâlinde makale ID numarasını da yazarak odusobiaddergi@gmail.com adresine iletiniz.
 
-Önemli Not: Sayı yayımlandıktan sonra fark edilen yazar kaynaklı hatalardan editör ve dergimiz sorumlu değildir. Bu nedenle yayım sonrası düzeltme talepleri kabul edilmeyecektir.
+⚠ ÖNEMLİ: Proofreading sürecinin (sertifika + değişikliklerin izlendiği dosya) tamamlanmaması hâlinde makale kabul alsa dahi DOI numarası verilmeyebilir. Yazarların bu durumu göz önünde bulundurmaları rica olunur.
+
+Not: Sayı yayımlandıktan sonra fark edilen yazar kaynaklı hatalardan editör ve dergimiz sorumlu değildir. Yayım sonrası düzeltme talepleri kabul edilmeyecektir.
 
 Lütfen gerekli tüm dosyaları [__] gün içinde sisteme yükleyiniz.
 
@@ -561,19 +659,31 @@ dergipark.org.tr/odusobiad`
           tr: 'SCOPUS — İngilizce Özet/Başlık Kalite Uyarısı — ODÜSOBİAD [Ref: {ID}]'
         },
         body: {
-          en: `Dear author,
+          en: `Dear Author(s),
 
-SCOPUS indexing requirements mandate that the English title and abstract of your manuscript meet academic English standards. Our preliminary review has identified issues affecting language quality in the English sections.
+In accordance with SCOPUS indexing requirements and ODÜSOBİAD's publication policy, the English title and abstract of your manuscript must meet academic English standards.
 
-Please have your English title and abstract proofread by an independent institution and upload the verifiable QR-coded certificate to the system.
+Our preliminary review has identified issues affecting language quality in the English sections of your manuscript (No: [XXXXXXX]).
+
+Please have your English title and abstract proofread by an independent institution and upload the following to the system:
+— Revised English title and abstract
+— Verifiable QR-coded proofreading certificate
+
+Please note: English full-text submissions are subject to a preliminary language assessment. Manuscripts found linguistically insufficient will be rejected.
 
 Sincerely,
 ODÜSOBİAD Editorial Office`,
-          tr: `Sayın yazar,
+          tr: `Sayın Yazar(lar),
 
-SCOPUS indeks gereksinimleri kapsamında makalenizin İngilizce başlığının ve özetinin akademik İngilizce standartlarını karşılaması zorunludur. Ön değerlendirmemizde İngilizce bölümlerde dil kalitesini etkileyen ifadeler tespit edilmiştir.
+SCOPUS indeks gereksinimleri ve ODÜSOBİAD yayın politikası kapsamında makalenizin İngilizce başlığının ve özetinin akademik İngilizce standartlarını karşılaması zorunludur.
 
-Makalenizin İngilizce başlık ve özetini bağımsız bir kuruma proofreading yaptırarak revize etmenizi ve doğrulanabilir karekodlu sertifikayı sisteme yüklemenizi rica ederiz.
+Ön değerlendirmemizde makalenizin (No: [XXXXXXX]) İngilizce bölümlerinde dil kalitesini etkileyen ifadeler tespit edilmiştir.
+
+Makalenizin İngilizce başlık ve özetini bağımsız bir kuruma proofreading yaptırarak aşağıdaki belgeleri sisteme yüklemenizi rica ederiz:
+— Revize edilmiş İngilizce başlık ve özet
+— Doğrulanabilir karekodlu proofreading sertifikası
+
+Not: İngilizce tam metin gönderilen yazılar, dil yeterliliği ve uygunluk açısından ön değerlendirmeye tabi tutulacaktır; dil yönünden uygun bulunmayan çalışmalar reddedilecektir.
 
 Saygılarımızla,
 ODÜSOBİAD Editörlüğü`
@@ -589,12 +699,34 @@ ODÜSOBİAD Editörlüğü`
           tr: 'SCOPUS — Yazar Afiliasyonu Eksikliği — ODÜSOBİAD [Ref: {ID}]'
         },
         body: {
-          en: `Dear author, SCOPUS and international indexing requirements mandate full name, institutional affiliation, and country for all authors in manuscript metadata. This information appears missing for [author name / all authors]. Please update both the manuscript and the DergiPark metadata form.
+          en: `Dear Author(s),
 
-Sincerely, ODÜSOBİAD Editorial Office`,
-          tr: `Sayın yazar, SCOPUS ve uluslararası dizin gereksinimleri doğrultusunda tüm yazarların tam adı, kurumu ve ülke bilgisinin makale üst verisinde yer alması zorunludur. Makalenizde [yazar adı / tüm yazarlar] için kurum ve/veya ülke bilgisi eksik görünmektedir. Lütfen bu bilgileri ekleyerek makaleyi ve DergiPark üst veri formunu güncelleyiniz.
+SCOPUS and international indexing requirements mandate that all authors' full name, institutional affiliation, and country must appear in the manuscript metadata.
 
-Saygılarımızla, ODÜSOBİAD Editörlüğü`
+The required affiliation format is: University/Institute/Faculty, Department, City, Country.
+
+Your manuscript (No: [XXXXXXX]) appears to be missing this information for [author name / all authors]. Please update:
+1. The manuscript file (Title Page and author information section)
+2. The DergiPark metadata form (all author fields)
+
+Additionally, all authors must provide a verified ORCID iD.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+SCOPUS ve uluslararası dizin gereksinimleri doğrultusunda tüm yazarların tam adı, kurumsal bağlantısı ve ülke bilgisinin makale üst verisinde yer alması zorunludur.
+
+Gerekli afiliasyon formatı: Üniversite/Enstitü/Fakülte, Bölüm, Şehir, Ülke şeklindedir.
+
+Makalenizde (No: [XXXXXXX]) [yazar adı / tüm yazarlar] için kurum ve/veya ülke bilgisi eksik görünmektedir. Lütfen aşağıdakileri güncelleyiniz:
+1. Makale dosyası (Başlık Sayfası ve yazar bilgileri bölümü)
+2. DergiPark üst veri formu (tüm yazar alanları)
+
+Ayrıca tüm yazarların doğrulanmış bir ORCID iD sağlaması gerekmektedir.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü`
         }
       },
 
@@ -625,12 +757,48 @@ Saygılarımızla, ODÜSOBİAD Editörlüğü`
           tr: 'SCOPUS/COPE — YZ Kullanım Beyanı Talebi — ODÜSOBİAD [Ref: {ID}]'
         },
         body: {
-          en: `Dear author, per SCOPUS and COPE 2024 requirements, if any AI tools were used in any part of your manuscript, this must be explicitly disclosed in the Methods or Acknowledgements section. If no AI tools were used, please add: "No AI tools were used in this study."
+          en: `Dear Author(s),
 
-Sincerely, ODÜSOBİAD Editorial Office`,
-          tr: `Sayın yazar, SCOPUS ve COPE 2024 gereksinimleri doğrultusunda makalenizin herhangi bir bölümünde yapay zeka araçları kullanıldıysa bu kullanımın Yöntem veya Teşekkür bölümünde açıkça beyan edilmesi gerekmektedir. Yapay zeka kullanılmadıysa "Bu çalışmada yapay zeka aracı kullanılmamıştır." şeklinde bir beyan eklemenizi talep ederiz.
+In accordance with SCOPUS, COPE, and ODÜSOBİAD's publication policy, all authors are required to declare the use of generative AI tools in the preparation of their manuscript.
 
-Saygılarımızla, ODÜSOBİAD Editörlüğü`
+If any AI tool (e.g., ChatGPT, Gemini, Claude, Copilot, Grammarly AI, etc.) was used in any part of the manuscript preparation process — including text writing/translation, data analysis, image generation, or code — the following must be disclosed:
+
+— Name and provider of the AI tool
+— Date(s) of use
+— How the tool was used and in which sections
+
+This declaration must be included in the Title Page (as a separate statement) and/or in the Methods section. It is also recommended to briefly mention it in the cover letter.
+
+AI tools cannot be listed as authors. Authors bear full responsibility for the accuracy and integrity of the content.
+
+If no AI tools were used, please add the following statement:
+"No AI tools were used in this study."
+
+⚠ Insufficient disclosure may lead to termination of the evaluation process, reversal of an acceptance decision, or correction/retraction procedures for published articles.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+SCOPUS, COPE ve ODÜSOBİAD yayın politikası gereğince tüm yazarların makalelerinin hazırlanmasında üretken yapay zeka araçlarının kullanımına ilişkin beyan yapması zorunludur.
+
+Makale hazırlık sürecinin herhangi bir bölümünde (metin yazımı/çeviri, veri analizi, görsel üretimi, kod vb.) bir yapay zeka aracı (ör. ChatGPT, Gemini, Claude, Copilot, Grammarly AI vb.) kullanıldıysa aşağıdaki bilgiler açıklanmalıdır:
+
+— Aracın adı ve sağlayıcısı/üreticisi
+— Kullanım tarihi/tarihleri
+— Aracın nasıl ve hangi bölümlerde kullanıldığı
+
+Bu beyan Başlık Sayfasında (Title Page) ayrı bir beyan olarak ve/veya Yöntem bölümünde ayrıntılı şekilde yer almalıdır. Kapak mektubunda da kısaca belirtilmesi önerilir.
+
+Yapay zeka araçları yazar olarak gösterilemez. İçeriğin doğruluğu ve bütünlüğünden yazarlar sorumludur.
+
+Yapay zeka kullanılmadıysa şu ifade eklenmelidir:
+"Bu çalışmada yapay zeka aracı kullanılmamıştır."
+
+⚠ Yeterli beyan yapılmaması; değerlendirme sürecinin sonlandırılması, kabul kararının geri alınması veya yayımlanmış bir makale için düzeltme/geri alma süreçlerine yol açabilir.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü`
         }
       },
 
@@ -1127,7 +1295,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
     </div>
     <div class="header-divider"></div>
     <div class="header-title">Editöryal Mesaj Bankası</div>
-    <span class="header-ver">v3.2 · 39 Şablon</span>
+    <span class="header-ver">v3.3 · 39 Şablon</span>
     <div class="lang-toggle" id="langToggle">
       <button class="lang-btn" data-lang="en">EN</button>
       <button class="lang-btn active" data-lang="tr">TR</button>
@@ -1197,13 +1365,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 </div>
 <div class="toast" id="toast"></div>
 <footer class="site-footer">
-  <strong>ODÜSOBİAD</strong> — Ordu Üniversitesi Sosyal Bilimler Araştırmaları Dergisi<br>
-  Açık Erişim · Çift Kör Hakem · APA 7.0 · COPE & SCOPUS Uyumlu<br>
+  <strong>ODÜSOBİAD</strong> — Ordu Üniversitesi Sosyal Bilimler Enstitüsü Sosyal Bilimler Araştırmaları Dergisi<br>
+  Açık Erişim · Çift Kör Hakem · APA 7.0 · COPE & SCOPUS Uyumlu · ISSN: 1309-9302<br>
   <a href="https://dergipark.org.tr/tr/pub/odusobiad" target="_blank">dergipark.org.tr/tr/pub/odusobiad</a> ·
-  <a href="mailto:odusobiad@odu.edu.tr">odusobiad@odu.edu.tr</a><br>
+  <a href="/cdn-cgi/l/email-protection#81eee5f4f2eee3e8e0e5c1eee5f4afe4e5f4aff5f3"><span class="__cf_email__" data-cfemail="721d1607011d101b1316321d16075c1716075c0600">[email&#160;protected]</span></a><br>
   Ordu Üniversitesi, Sosyal Bilimler Enstitüsü, 52200 Altınordu – Ordu, Türkiye
 </footer>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 (function(){
   'use strict';
   const D=ODUSOBIAD_MESSAGES, msgs=D.messages;
@@ -1248,10 +1416,4 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   document.querySelectorAll('.lang-btn').forEach(b=>{b.onclick=()=>{S.lang=b.dataset.lang;document.querySelectorAll('.lang-btn').forEach(x=>x.classList.toggle('active',x.dataset.lang===S.lang));render();};});
   $('searchInput').oninput=e=>{S.q=e.target.value;render();};
   $('clearBtn').onclick=()=>{S.secs.clear();S.stgs.clear();S.comp.clear();S.q='';$('searchInput').value='';render();};
-  function ct(t){if(navigator.clipboard)navigator.clipboard.writeText(t);else{const a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();document.execCommand('copy');document.body.removeChild(a);}st('📋 Panoya kopyalandı!');}
-  let tt;function st(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2200);}
-  render();
-})();
-</script>
-</body>
-</html>
+  function ct(t){if(navigator.clipboard)navigator.clipboard.writeText(t);else{const a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();document.execCommand('copy');document.body.
