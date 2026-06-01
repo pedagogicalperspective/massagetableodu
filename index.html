@@ -10,7 +10,7 @@
 (function (global) {
   'use strict';
   var ODUSOBIAD_MESSAGES = {
-    version: '3.4',
+    version: '3.5',
     journal: {
       name: 'Ordu Üniversitesi Sosyal Bilimler Enstitüsü Sosyal Bilimler Araştırmaları Dergisi',
       abbr: 'ODÜSOBİAD',
@@ -183,6 +183,139 @@ dergipark.org.tr/odusobiad` } },
         subject: { en: 'Academic Editing Request — ODÜSOBİAD [Ref: {ID}]', tr: 'Akademik Redaksiyon Talebi — ODÜSOBİAD [Ref: {ID}]' },
         body: { en: `Dear Author(s),\n\nManuscripts accepted for publication in ODÜSOBİAD must undergo academic editing by an independent editing organization. The scope of academic editing includes:\n\n— Correcting structural issues, grammar, and expression errors\n— Spelling and punctuation corrections\n— Reformatting in-text citations and references to APA 7\n— Adapting tables, figures, and visuals to journal standards\n\nFor English manuscripts, proofreading by an independent institution is mandatory. A verifiable QR-coded certificate must be obtained and uploaded to the system together with the tracked-changes file.\n\n⚠ IMPORTANT: Failure to complete this process may result in the manuscript not receiving a DOI number, even if it has been accepted.\n\nNote: ODÜSOBİAD does not recommend any specific editing organization or company. Authors are free to choose any independent provider that delivers quality work and provides a verifiable certificate.\n\nSincerely,\nODÜSOBİAD Editorial Office`, tr: `Değerli Yazar(lar),\n\nODÜSOBİAD'da yayın sürecine alınacak çalışmaların bağımsız editing kuruluşlarına akademik redaksiyon yaptırılması gerekmektedir. Akademik redaksiyon kapsamı:\n\n— Anlatım bozukluklarının giderilmesi, dilbilgisi ve ifade hatalarının düzeltilmesi\n— Yazım ve noktalama düzeltmeleri\n— Metin içi atıf ve kaynakçanın APA 7'ye uygun hâle getirilmesi\n— Tablo, grafik ve görsellerin dergi kurallarına uyarlanması\n\nİngilizce çalışmalar için bağımsız bir kurumdan proofreading yaptırılması zorunludur. Doğrulanabilir karekodlu sertifika alınmalı ve değişikliklerin izlendiği dosya ile birlikte sisteme yüklenmelidir.\n\n⚠ ÖNEMLİ: Bu sürecin tamamlanmaması hâlinde makale kabul alsa dahi DOI numarası verilmeyebilir.\n\nNot: Dergimiz tarafsız olmak adına herhangi bir editing kuruluşu veya şirket önermemektedir. Yazarlar; işini iyi ve uygun fiyata yapan, yapılan düzeltmelerin izlenebildiği ve doğrulanabilir kodlu sertifika sunan bağımsız bir kuruluşu tercih edebilir.\n\nSaygılarımızla,\nODÜSOBİAD Editörlüğü` } },
 
+      { id: 'a8', role: 'sec', stage: 'desk', cope: false, scopus: false,
+        title: { en: 'Pre-check Return — Missing Documents / Template Non-compliance', tr: 'Ön Kontrol İadesi — Eksik Belge / Şablon Uyumsuzluğu' },
+        subject: { en: 'Pre-check Return — ODÜSOBİAD [Ref: {ID}]', tr: 'Ön Kontrol İadesi — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+Your manuscript "[Manuscript Title]" (No: [XXXXXXX]) has been reviewed during the pre-check stage and is being returned for the following reason(s):
+
+☐ The manuscript was not prepared using the journal's official template or the template formatting has been altered.
+☐ The Blinded Main Text still contains author/institution identifying information.
+☐ The Title Page is missing or incomplete (author names, affiliations, ORCID, CRediT, declarations).
+☐ The Cover Letter is missing or does not contain the required declarations.
+☐ The Similarity Report (iThenticate/Turnitin) has not been uploaded.
+☐ The Ethics Committee Approval document is missing (or Ethics Exemption Form not provided).
+☐ The Copyright / Disclaimer Form has not been uploaded.
+☐ The Conflict of Interest Declaration Form has not been uploaded.
+☐ DergiPark metadata fields are incomplete or inconsistent with the manuscript file.
+☐ The manuscript does not meet the word count (4,000–9,000) or page limit (max. 30 pages).
+☐ Other: ___________________________________
+
+Please note: Manuscripts that fail to meet pre-check requirements after two reviews will be returned to the author and will not be processed again in the same publication period.
+
+Please complete the missing items and resubmit within [__] days.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makaleniz (No: [XXXXXXX]) ön kontrol aşamasında incelenmiş olup aşağıdaki gerekçe(ler)le iade edilmektedir:
+
+☐ Makale derginin resmi şablonu kullanılarak hazırlanmamış veya şablon biçimi bozulmuştur.
+☐ Körlenmiş Ana Metin'de yazar/kurum tanımlayıcı bilgiler yer almaktadır.
+☐ Başlık Sayfası (Title Page) eksik veya yetersizdir (yazar adları, kurumlar, ORCID, CRediT, beyanlar).
+☐ Kapak Mektubu eksiktir veya zorunlu beyanları içermemektedir.
+☐ Benzerlik Raporu (iThenticate/Turnitin) sisteme yüklenmemiştir.
+☐ Etik Kurul Onay belgesi eksiktir (veya Etik Kurul Muafiyet Bildirimi sağlanmamıştır).
+☐ Telif Hakkı / Feragatname Formu yüklenmemiştir.
+☐ Çıkar Çatışması Beyan Formu yüklenmemiştir.
+☐ DergiPark üst veri alanları eksik veya makale dosyasıyla tutarsızdır.
+☐ Makale kelime sayısı (4.000–9.000) veya sayfa sınırını (en fazla 30 sayfa) karşılamamaktadır.
+☐ Diğer: ___________________________________
+
+Not: Ön kontrol aşamasında iki defa incelendiği hâlde gerekli koşulları sağlayamayan çalışma yazara iade edilir ve aynı yayın döneminde tekrar işleme alınmaz.
+
+Lütfen eksik maddeleri tamamlayarak [__] gün içinde yeniden gönderiniz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
+      { id: 'a9', role: 'sec', stage: 'desk', cope: false, scopus: false,
+        title: { en: 'Missing / Insufficient Cover Letter', tr: 'Kapak Mektubu Eksikliği / Yetersizliği' },
+        subject: { en: 'Cover Letter Required — ODÜSOBİAD [Ref: {ID}]', tr: 'Kapak Mektubu Gerekli — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+A Cover Letter is mandatory for all submissions to ODÜSOBİAD. Your manuscript "[Manuscript Title]" (No: [XXXXXXX]) is either missing a cover letter or the submitted cover letter does not contain the required declarations.
+
+The Cover Letter must be written/pasted directly into the relevant field in the DergiPark system (not uploaded as a separate file) and must include the following:
+
+1. A statement that the manuscript has not been previously published and is not under review at another journal.
+2. Confirmation that all authors have approved the submission and accept responsibility for the content.
+3. A brief justification of the manuscript's relevance to the journal's aim and scope.
+4. A declaration regarding the use of AI tools (if none were used, this must also be stated).
+
+Please update your cover letter via the DergiPark system within [__] days.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+ODÜSOBİAD'a yapılan tüm gönderimlerde Kapak Mektubu zorunludur. "[Makale Başlığı]" başlıklı makalenizde (No: [XXXXXXX]) kapak mektubu eksik veya mevcut kapak mektubu zorunlu beyanları içermemektedir.
+
+Kapak Mektubu, DergiPark sistemindeki ilgili alana doğrudan yazılır/yapıştırılır; ayrı dosya olarak yüklenmez. Aşağıdaki hususları içermesi zorunludur:
+
+1. Çalışmanın daha önce yayımlanmadığı ve başka bir dergide değerlendirmede olmadığı beyanı.
+2. Tüm yazarların gönderimi onayladığı ve içerikten sorumluluk aldığı beyanı.
+3. Çalışmanın derginin amaç ve kapsamına uygunluğuna ilişkin kısa gerekçe.
+4. Kullanılan AI araçlarına ilişkin beyan (kullanılmadıysa da belirtilmelidir).
+
+Lütfen kapak mektubunuzu DergiPark sistemi üzerinden [__] gün içinde güncelleyiniz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
+      { id: 'a10', role: 'sec', stage: 'desk', cope: false, scopus: false,
+        title: { en: 'Submission Files Checklist', tr: 'Gönderim Dosyaları Kontrol Listesi' },
+        subject: { en: 'Submission Files Checklist — ODÜSOBİAD [Ref: {ID}]', tr: 'Gönderim Dosyaları Kontrol Listesi — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+Please ensure the following mandatory files have been uploaded for your manuscript "[Manuscript Title]" (No: [XXXXXXX]):
+
+MANDATORY AT SUBMISSION:
+☐ Title Page (BaslikSayfasi_v2.docx) — author names, affiliations, ORCID, CRediT, all declarations
+☐ Blinded Main Text — author/institution information removed, prepared using journal template
+☐ Similarity Report — iThenticate or Turnitin output (PDF), total ≤20%, single source ≤3%
+☐ Ethics Committee Approval — or Ethics Exemption Form (EtikKurulMuafiyet_v2.docx) if not required
+☐ Copyright / Disclaimer Form (Feragatname_v2.docx)
+☐ Conflict of Interest Declaration (CikarCatismasiBeyan_v3.docx)
+☐ Figures / Supplementary Materials (if applicable, as separate files)
+☐ Cover Letter — written directly in DergiPark (not uploaded as file)
+
+MANDATORY AFTER ACCEPTANCE:
+☐ Proofreading Certificate — QR-coded, verifiable
+☐ Tracked-changes file — Word document with corrections visible
+
+All forms are available on the Writing Rules page: dergipark.org.tr/tr/pub/odusobiad/writing-rules
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makaleniz (No: [XXXXXXX]) için aşağıdaki zorunlu dosyaların yüklendiğinden emin olunuz:
+
+GÖNDERİMDE ZORUNLU:
+☐ Başlık Sayfası (BaslikSayfasi_v2.docx) — yazar adları, kurumlar, ORCID, CRediT, tüm beyanlar
+☐ Körlenmiş Ana Metin — yazar/kurum bilgileri kaldırılmış, dergi şablonuna uygun hazırlanmış
+☐ Benzerlik Raporu — iThenticate veya Turnitin çıktısı (PDF), toplam ≤%20, tek kaynak ≤%3
+☐ Etik Kurul Onayı — veya gerekmiyorsa Etik Kurul Muafiyet Bildirimi (EtikKurulMuafiyet_v2.docx)
+☐ Telif Hakkı / Feragatname Formu (Feragatname_v2.docx)
+☐ Çıkar Çatışması Beyanı (CikarCatismasiBeyan_v3.docx)
+☐ Şekiller / Ek Materyaller (varsa ayrı dosya olarak)
+☐ Kapak Mektubu — DergiPark'ta ilgili alana doğrudan yazılır (dosya olarak yüklenmez)
+
+KABUL SONRASI ZORUNLU:
+☐ Proofreading Sertifikası — karekodlu, doğrulanabilir
+☐ Değişikliklerin izlendiği dosya — düzeltmelerin görülebildiği Word belgesi
+
+Tüm formlar Yazım Kuralları sayfasından indirilebilir: dergipark.org.tr/tr/pub/odusobiad/writing-rules
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
       { id: 'b0', role: 'eic', stage: 'decision', cope: false, scopus: false,
         title: { en: 'Acceptance — Unconditional + Proofreading', tr: 'Kabul — Koşulsuz + Son Okuma' },
         subject: { en: 'Manuscript Accepted — ODÜSOBİAD [Ref: {ID}]', tr: 'Makale Kabul Edildi — ODÜSOBİAD [Ref: {ID}]' },
@@ -278,6 +411,78 @@ dergipark.org.tr/odusobiad` } },
 
       { id: 'c3', role: 'sec', stage: 'other', cope: false, scopus: false, title: { en: 'Special Issue — Reupload Required', tr: 'Özel Sayı — Makale Yeniden Yükleme' }, subject: { en: 'Special Issue — Reupload Required — ODÜSOBİAD [Ref: {ID}]', tr: 'Özel Sayı — Makale Yeniden Yükleme — ODÜSOBİAD [Ref: {ID}]' }, body: { en: `Dear author, please re-upload your manuscript to the system and remember to select the special issue option. (System closing: [DD.MM.YYYY at 00:00])`, tr: `Değerli yazar, makalenizi sisteme tekrar yüklemeniz gerekmektedir. Yüklerken lütfen özel sayı seçeneğini seçmeyi unutmayınız. (Sistem kapanış tarihi: [GG.AA.YYYY saat 00:00])` } },
 
+      { id: 'c4', role: 'sec', stage: 'desk', cope: true, scopus: false,
+        title: { en: 'Authorship Criteria & CRediT Statement Request', tr: 'Yazarlık Kriterleri ve CRediT Beyanı Talebi' },
+        subject: { en: 'Authorship & CRediT Statement — ODÜSOBİAD [Ref: {ID}]', tr: 'Yazarlık ve CRediT Beyanı — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+In accordance with ICMJE recommendations adopted by ODÜSOBİAD, all listed authors must meet ALL four of the following criteria:
+
+1. DESIGN / DATA CONTRIBUTION — Substantial contribution to the conception/design of the work or the acquisition/analysis/interpretation of data.
+2. INTELLECTUAL CONTRIBUTION — Drafting the work or critically revising it for important intellectual content.
+3. APPROVAL — Approving the final version to be published.
+4. ACCOUNTABILITY — Agreeing to be accountable for all aspects of the work.
+
+Individuals who do not meet all four criteria cannot be listed as authors. Their contributions should be acknowledged in the "Acknowledgements" section (e.g., administrative support, funding, technical/language editing).
+
+For multi-author manuscripts, shared first-authorship or similar arrangements must be explicitly stated on the Title Page.
+
+Please also ensure that each author's contributions are declared using the CRediT (Contributor Roles Taxonomy) format on the Title Page:
+
+Conceptualization | Data Curation | Formal Analysis | Funding Acquisition | Investigation | Methodology | Project Administration | Resources | Software | Supervision | Validation | Visualization | Writing – Original Draft | Writing – Review & Editing
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+ODÜSOBİAD'ın benimsediği ICMJE önerileri doğrultusunda, listede yer alan tüm yazarların aşağıdaki dört koşulun TAMAMINI karşılaması gerekmektedir:
+
+1. TASARIM / VERİ KATKISI — Çalışmanın tasarımı/kurgusu veya veri toplama/analiz/yorumuna önemli katkı sağlamak.
+2. ENTELEKTÜEL KATKI — Makaleyi yazmak veya önemli entelektüel içerik açısından eleştirel olarak gözden geçirmek.
+3. ONAY — Yayımlanacak nihai sürümü onaylamak.
+4. HESAP VEREBİLİRLİK — Çalışmanın doğruluğu/bütünlüğüyle ilgili tüm soruların yanıtlanmasından sorumlu olmayı kabul etmek.
+
+Dört ölçütün tamamını karşılamayan kişiler yazar olarak gösterilemez. Katkıları "Teşekkür" bölümünde açıkça belirtilmelidir (ör. idari destek, finansman sağlama, teknik/dil editörlüğü).
+
+Çok yazarlı çalışmalarda ortak birinci yazarlık veya benzeri statüler Başlık Sayfasında açıkça belirtilmelidir.
+
+Ayrıca her yazarın katkılarının Başlık Sayfasında CRediT (Katkı Sahibi Rolleri Taksonomisi) formatında beyan edilmesini sağlayınız:
+
+Kavramsallaştırma | Veri Düzenleme | Biçimsel Analiz | Fon Temini | Araştırma | Yöntem | Proje Yönetimi | Kaynaklar | Yazılım | Danışmanlık | Doğrulama | Görselleştirme | Yazım – Özgün Taslak | Yazım – Gözden Geçirme ve Düzenleme
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
+      { id: 'c5', role: 'sec', stage: 'desk', cope: false, scopus: false,
+        title: { en: 'Copyright / Disclaimer Form Request', tr: 'Telif Hakkı / Feragatname Formu Talebi' },
+        subject: { en: 'Copyright Form Required — ODÜSOBİAD [Ref: {ID}]', tr: 'Telif Hakkı Formu Gerekli — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+The Copyright / Disclaimer Form for your manuscript "[Manuscript Title]" (No: [XXXXXXX]) has not been uploaded to the system.
+
+In accordance with ODÜSOBİAD's publication policy, all authors must complete and submit this form. Published articles are made available under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence. The copyright of all published works belongs to the journal.
+
+Please download the form (Feragatname_v2.docx) from the Writing Rules page, have it signed by all authors, and upload it via the DergiPark system within [__] days.
+
+Note: Authors are responsible for all views expressed in their articles and bear full legal responsibility.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makalenize (No: [XXXXXXX]) ait Telif Hakkı / Feragatname Formu sisteme yüklenmemiştir.
+
+ODÜSOBİAD yayın politikası gereğince tüm yazarların bu formu doldurarak sisteme yüklemesi zorunludur. Yayımlanan makaleler Creative Commons Attribution 4.0 International (CC BY 4.0) lisansı kapsamında açık erişimle sunulmaktadır. Yayımlanan her türlü çalışmanın telif hakkı dergiye aittir.
+
+Lütfen formu (Feragatname_v2.docx) Yazım Kuralları sayfasından indirerek tüm yazarlara imzalatınız ve [__] gün içinde DergiPark sistemi üzerinden yükleyiniz.
+
+Not: Makalelerde ifade edilen görüşlerden yazarlar sorumludur. Makalelerin tüm yasal sorumluluğu yazarlarına aittir.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
       { id: 'd1', role: 'eic', stage: 'desk', cope: false, scopus: true, title: { en: 'SCOPUS — English Abstract/Title Quality', tr: 'SCOPUS — İngilizce Özet/Başlık Kalite Uyarısı' }, subject: { en: 'SCOPUS — English Abstract/Title Quality — ODÜSOBİAD [Ref: {ID}]', tr: 'SCOPUS — İngilizce Özet/Başlık Kalite Uyarısı — ODÜSOBİAD [Ref: {ID}]' }, body: { en: `Dear Author(s),\n\nIn accordance with SCOPUS indexing requirements and ODÜSOBİAD's publication policy, the English title and abstract of your manuscript must meet academic English standards.\n\nOur preliminary review has identified issues affecting language quality in the English sections of your manuscript (No: [XXXXXXX]).\n\nPlease have your English title and abstract proofread by an independent institution and upload the following to the system:\n— Revised English title and abstract\n— Verifiable QR-coded proofreading certificate\n\nPlease note: English full-text submissions are subject to a preliminary language assessment. Manuscripts found linguistically insufficient will be rejected.\n\nSincerely,\nODÜSOBİAD Editorial Office`, tr: `Sayın Yazar(lar),\n\nSCOPUS indeks gereksinimleri ve ODÜSOBİAD yayın politikası kapsamında makalenizin İngilizce başlığının ve özetinin akademik İngilizce standartlarını karşılaması zorunludur.\n\nÖn değerlendirmemizde makalenizin (No: [XXXXXXX]) İngilizce bölümlerinde dil kalitesini etkileyen ifadeler tespit edilmiştir.\n\nMakalenizin İngilizce başlık ve özetini bağımsız bir kuruma proofreading yaptırarak aşağıdaki belgeleri sisteme yüklemenizi rica ederiz:\n— Revize edilmiş İngilizce başlık ve özet\n— Doğrulanabilir karekodlu proofreading sertifikası\n\nNot: İngilizce tam metin gönderilen yazılar, dil yeterliliği ve uygunluk açısından ön değerlendirmeye tabi tutulacaktır; dil yönünden uygun bulunmayan çalışmalar reddedilecektir.\n\nSaygılarımızla,\nODÜSOBİAD Editörlüğü` } },
 
       { id: 'd2', role: 'eic', stage: 'desk', cope: false, scopus: true, title: { en: 'SCOPUS — Missing Author Affiliation', tr: 'SCOPUS — Yazar Afiliasyonu Eksikliği' }, subject: { en: 'SCOPUS — Missing Author Affiliation — ODÜSOBİAD [Ref: {ID}]', tr: 'SCOPUS — Yazar Afiliasyonu Eksikliği — ODÜSOBİAD [Ref: {ID}]' }, body: { en: `Dear Author(s),\n\nSCOPUS and international indexing requirements mandate that all authors' full name, institutional affiliation, and country must appear in the manuscript metadata.\n\nThe required affiliation format is: University/Institute/Faculty, Department, City, Country.\n\nYour manuscript (No: [XXXXXXX]) appears to be missing this information for [author name / all authors]. Please update:\n1. The manuscript file (Title Page and author information section)\n2. The DergiPark metadata form (all author fields)\n\nAdditionally, all authors must provide a verified ORCID iD.\n\nSincerely,\nODÜSOBİAD Editorial Office`, tr: `Sayın Yazar(lar),\n\nSCOPUS ve uluslararası dizin gereksinimleri doğrultusunda tüm yazarların tam adı, kurumsal bağlantısı ve ülke bilgisinin makale üst verisinde yer alması zorunludur.\n\nGerekli afiliasyon formatı: Üniversite/Enstitü/Fakülte, Bölüm, Şehir, Ülke şeklindedir.\n\nMakalenizde (No: [XXXXXXX]) [yazar adı / tüm yazarlar] için kurum ve/veya ülke bilgisi eksik görünmektedir. Lütfen aşağıdakileri güncelleyiniz:\n1. Makale dosyası (Başlık Sayfası ve yazar bilgileri bölümü)\n2. DergiPark üst veri formu (tüm yazar alanları)\n\nAyrıca tüm yazarların doğrulanmış bir ORCID iD sağlaması gerekmektedir.\n\nSaygılarımızla,\nODÜSOBİAD Editörlüğü` } },
@@ -287,6 +492,121 @@ dergipark.org.tr/odusobiad` } },
       { id: 'd4', role: 'eic', stage: 'integrity', cope: true, scopus: true, title: { en: 'SCOPUS/COPE — AI Use Disclosure', tr: 'SCOPUS/COPE — YZ Kullanım Beyanı Talebi' }, subject: { en: 'SCOPUS/COPE — AI Use Disclosure — ODÜSOBİAD [Ref: {ID}]', tr: 'SCOPUS/COPE — YZ Kullanım Beyanı Talebi — ODÜSOBİAD [Ref: {ID}]' }, body: { en: `Dear Author(s),\n\nIn accordance with SCOPUS, COPE, and ODÜSOBİAD's publication policy, all authors are required to declare the use of generative AI tools in the preparation of their manuscript.\n\nIf any AI tool (e.g., ChatGPT, Gemini, Claude, Copilot, Grammarly AI, etc.) was used in any part of the manuscript preparation process — including text writing/translation, data analysis, image generation, or code — the following must be disclosed:\n\n— Name and provider of the AI tool\n— Date(s) of use\n— How the tool was used and in which sections\n\nThis declaration must be included in the Title Page (as a separate statement) and/or in the Methods section. It is also recommended to briefly mention it in the cover letter.\n\nAI tools cannot be listed as authors. Authors bear full responsibility for the accuracy and integrity of the content.\n\nIf no AI tools were used, please add the following statement:\n"No AI tools were used in this study."\n\n⚠ Insufficient disclosure may lead to termination of the evaluation process, reversal of an acceptance decision, or correction/retraction procedures for published articles.\n\nSincerely,\nODÜSOBİAD Editorial Office`, tr: `Sayın Yazar(lar),\n\nSCOPUS, COPE ve ODÜSOBİAD yayın politikası gereğince tüm yazarların makalelerinin hazırlanmasında üretken yapay zeka araçlarının kullanımına ilişkin beyan yapması zorunludur.\n\nMakale hazırlık sürecinin herhangi bir bölümünde (metin yazımı/çeviri, veri analizi, görsel üretimi, kod vb.) bir yapay zeka aracı (ör. ChatGPT, Gemini, Claude, Copilot, Grammarly AI vb.) kullanıldıysa aşağıdaki bilgiler açıklanmalıdır:\n\n— Aracın adı ve sağlayıcısı/üreticisi\n— Kullanım tarihi/tarihleri\n— Aracın nasıl ve hangi bölümlerde kullanıldığı\n\nBu beyan Başlık Sayfasında (Title Page) ayrı bir beyan olarak ve/veya Yöntem bölümünde ayrıntılı şekilde yer almalıdır. Kapak mektubunda da kısaca belirtilmesi önerilir.\n\nYapay zeka araçları yazar olarak gösterilemez. İçeriğin doğruluğu ve bütünlüğünden yazarlar sorumludur.\n\nYapay zeka kullanılmadıysa şu ifade eklenmelidir:\n"Bu çalışmada yapay zeka aracı kullanılmamıştır."\n\n⚠ Yeterli beyan yapılmaması; değerlendirme sürecinin sonlandırılması, kabul kararının geri alınması veya yayımlanmış bir makale için düzeltme/geri alma süreçlerine yol açabilir.\n\nSaygılarımızla,\nODÜSOBİAD Editörlüğü` } },
 
       { id: 'd5', role: 'eic', stage: 'desk', cope: false, scopus: true, title: { en: 'SCOPUS — International Scope / Citation Notice', tr: 'SCOPUS — Uluslararası Kapsam / Atıf Uyarısı' }, subject: { en: 'SCOPUS — International Scope / Citation Notice — ODÜSOBİAD [Ref: {ID}]', tr: 'SCOPUS — Uluslararası Kapsam / Atıf Uyarısı — ODÜSOBİAD [Ref: {ID}]' }, body: { en: `Dear author, connection to international literature is a key SCOPUS evaluation criterion. We recommend strengthening your literature review with recent international sources (last 5 years) and completing DOI information for all applicable references.\n\nSincerely, ODÜSOBİAD Editorial Office`, tr: `Sayın yazar, SCOPUS değerlendirme kriterleri arasında çalışmanın uluslararası literatürle bağlantısı önemli bir yer tutmaktadır. Makalenizin literatür taramasını güncel uluslararası kaynaklarla (son 5 yıl) güçlendirmenizi ve kaynakçanızdaki DOI bilgilerini tamamlamanızı tavsiye ederiz.\n\nSaygılarımızla, ODÜSOBİAD Editörlüğü` } },
+
+      { id: 'd6', role: 'sec', stage: 'desk', cope: true, scopus: false,
+        title: { en: 'Ethics Committee Approval — Missing / Expired / Pre-collection', tr: 'Etik Kurul Onayı — Eksik / Süresi Dolmuş / Önceden Veri Toplama' },
+        subject: { en: 'Ethics Committee Approval — ODÜSOBİAD [Ref: {ID}]', tr: 'Etik Kurul Onayı — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+Your manuscript "[Manuscript Title]" (No: [XXXXXXX]) requires action regarding ethics committee approval. The following issue(s) have been identified:
+
+☐ Ethics committee approval document is missing. Studies involving surveys, scales, interviews, observations, human/animal experiments, or sensitive personal data require formal ethics approval.
+☐ The ethics committee approval date is more than 2 years prior to the submission date. The approval must be within 2 years.
+☐ Data collection/implementation appears to have been conducted BEFORE the ethics committee approval date. Such studies will be rejected by the editor.
+☐ Ethics committee details (committee name, decision date, decision number) are not stated in the Methods section and on the first/last page of the manuscript.
+☐ If your study does not require ethics approval, please complete the Ethics Exemption Form (EtikKurulMuafiyet_v2.docx) and upload it to the system.
+
+Please resolve the identified issue(s) and upload the required documents within [__] days. Manuscripts requiring ethics approval cannot proceed to peer review without proper documentation.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makaleniz (No: [XXXXXXX]) için etik kurul onayı konusunda işlem gerekmektedir. Aşağıdaki sorun(lar) tespit edilmiştir:
+
+☐ Etik kurul onay belgesi eksiktir. Anket, ölçek, görüşme, gözlem, insan/hayvan deneyleri veya hassas kişisel veri içeren araştırmalar için resmi etik onay zorunludur.
+☐ Etik kurul onay tarihi, gönderim tarihinden 2 yıldan daha eski tarihlidir. Onay tarihi ile gönderim tarihi arasında en fazla 2 yıl olmalıdır.
+☐ Veri toplama/uygulama sürecinin etik kurul izin tarihinden ÖNCE gerçekleştirildiği anlaşılmaktadır. Bu durumda çalışma editör tarafından reddedilir.
+☐ Etik kurul izin bilgileri (kurul adı, karar tarihi ve numarası) yöntem bölümünde ve makalenin ilk/son sayfasında yer almamaktadır.
+☐ Çalışmanız etik kurul izni gerektirmiyorsa lütfen Etik Kurul Muafiyet Bildirimi'ni (EtikKurulMuafiyet_v2.docx) doldurarak sisteme yükleyiniz.
+
+Lütfen tespit edilen sorun(lar)ı gidererek gerekli belgeleri [__] gün içinde sisteme yükleyiniz. Etik kurul izni gerektiren makaleler uygun belge sunulmadan hakem sürecine alınamaz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
+      { id: 'd7', role: 'sec', stage: 'desk', cope: false, scopus: true,
+        title: { en: 'Data Availability Statement Request', tr: 'Veri Erişilebilirliği Beyanı Talebi' },
+        subject: { en: 'Data Availability Statement — ODÜSOBİAD [Ref: {ID}]', tr: 'Veri Erişilebilirliği Beyanı — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+ODÜSOBİAD promotes open science practices. Your manuscript "[Manuscript Title]" (No: [XXXXXXX]) does not include a Data Availability Statement.
+
+Please add one of the following statements to the final section of your manuscript (before the References):
+
+☐ "The data that support the findings of this study are openly available in [repository name] at [URL/DOI]."
+☐ "The data are available from the corresponding author upon reasonable request."
+☐ "The data are not available due to [reason, e.g., privacy/ethical restrictions]."
+☐ "No new data were generated or analysed in this study." (For theoretical/review studies.)
+☐ "All data are included in the article and/or supplementary materials."
+
+Additionally, if any registered scales, surveys, or instruments belonging to others were used, please upload the permission documents to the system.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+ODÜSOBİAD açık bilim uygulamalarını teşvik etmektedir. "[Makale Başlığı]" başlıklı makalenizde (No: [XXXXXXX]) Veri Erişilebilirliği Beyanı bulunmamaktadır.
+
+Lütfen aşağıdaki beyanlardan birini makalenizin son bölümüne (Kaynakça'dan önce) ekleyiniz:
+
+☐ "Bu çalışmanın bulgularını destekleyen veriler, [depo adı]'nda [URL/DOI] adresinde açıkça erişilebilir durumdadır."
+☐ "Veriler, makul bir talep üzerine sorumlu yazardan temin edilebilir."
+☐ "Veriler, [nedeni, ör. gizlilik/etik kısıtlamalar] nedeniyle erişime açık değildir."
+☐ "Bu araştırmayı destekleyen yeni bir veri üretilmemiş veya analiz edilmemiştir." (Kuramsal/derleme çalışmaları için.)
+☐ "Tüm veriler makale ve/veya ek materyallerine dahil edilmiştir."
+
+Ayrıca başkalarına ait tescilli ölçek, anket veya araçlar kullanıldıysa izin belgelerinin sisteme eklenmesi gerekmektedir.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
+
+      { id: 'd8', role: 'eic', stage: 'desk', cope: false, scopus: true,
+        title: { en: 'APA 7 Non-compliance Notice', tr: 'APA 7 Uyumsuzluk Uyarısı' },
+        subject: { en: 'APA 7 Citation & Reference Issues — ODÜSOBİAD [Ref: {ID}]', tr: 'APA 7 Atıf ve Kaynakça Sorunları — ODÜSOBİAD [Ref: {ID}]' },
+        body: {
+          en: `Dear Author(s),
+
+Our review of "[Manuscript Title]" (No: [XXXXXXX]) has identified significant non-compliance with APA 7 citation and referencing standards. The following issues require correction:
+
+☐ In-text citations do not follow APA 7 format (e.g., Author (Year, p. X) or (Author, Year, p. X)).
+☐ Reference list entries do not conform to APA 7 structure.
+☐ DOI information is missing for references where DOIs are available.
+☐ References cited in-text are missing from the reference list (or vice versa).
+☐ Turkish-language source titles are not accompanied by English translations in brackets.
+☐ URL/DOI links are broken or incomplete.
+☐ Other: ___________________________________
+
+For correct formatting, we recommend using reference management tools such as Zotero, Mendeley, or EndNote.
+
+Reference examples and detailed guidelines: https://www.apastyle.org and https://owl.purdue.edu/owl/research_and_citation/apa_style/
+
+Please correct the identified issues and resubmit within [__] days.
+
+Sincerely,
+ODÜSOBİAD Editorial Office`,
+          tr: `Sayın Yazar(lar),
+
+"[Makale Başlığı]" başlıklı makalenizin (No: [XXXXXXX]) incelenmesinde APA 7 atıf ve kaynak gösterme standartlarına önemli ölçüde uyumsuzluk tespit edilmiştir. Aşağıdaki hususların düzeltilmesi gerekmektedir:
+
+☐ Metin içi atıflar APA 7 formatına uygun değildir (ör. Yazar (Yıl, s. X) veya (Yazar, Yıl, s. X)).
+☐ Kaynakça girdileri APA 7 yapısına uygun değildir.
+☐ DOI bilgileri mevcut olan kaynaklar için DOI eklenmemiştir.
+☐ Metin içinde atıf yapılan kaynaklar kaynakçada yer almamaktadır (veya tersi).
+☐ Türkçe kaynak başlıkları köşeli parantez içinde İngilizce çevirileriyle desteklenmemiştir.
+☐ URL/DOI bağlantıları kırık veya eksiktir.
+☐ Diğer: ___________________________________
+
+Doğru biçimlendirme için Zotero, Mendeley veya EndNote gibi kaynak yönetimi araçlarının kullanılması önerilir.
+
+Kaynak örnekleri ve ayrıntılı rehber: https://www.apastyle.org ve https://owl.purdue.edu/owl/research_and_citation/apa_style/
+
+Lütfen tespit edilen sorunları düzelterek [__] gün içinde yeniden gönderiniz.
+
+Saygılarımızla,
+ODÜSOBİAD Editörlüğü` } },
 
       { id: 'e1', role: 'eic', stage: 'integrity', cope: true, scopus: false, title: { en: 'Plagiarism / High Similarity Investigation', tr: 'İntihal / Yüksek Benzerlik Soruşturması' }, subject: { en: 'Plagiarism / High Similarity Investigation — ODÜSOBİAD [Ref: {ID}]', tr: 'İntihal / Yüksek Benzerlik Soruşturması — ODÜSOBİAD [Ref: {ID}]' }, body: { en: `Dear author,\n\nA similarity check of "[Manuscript Title]" (No: [XXXXXXX]) has revealed a concerning level of similarity (%[rate]).\n\nAn investigation has been initiated per COPE guidelines. Within [__] days, please upload:\n- A written explanation regarding the source of similarity\n- Any supporting documents affirming originality (if any)\n\nFailure to respond will result in rejection, and your institution will be informed if necessary.\n\nSincerely, ODÜSOBİAD Editorial Office`, tr: `Sayın yazar,\n\n"[Makale Başlığı]" başlıklı makalenizde (No: [XXXXXXX]) benzerlik taraması sonucunda kaygı verici düzeyde benzerlik (%[oran]) tespit edilmiştir.\n\nCOPE yönergelerine uygun olarak soruşturma başlatılmış olup [__] gün içinde aşağıdaki bilgileri sisteme yüklemenizi bekliyoruz:\n- Benzerlik kaynağına ilişkin yazılı açıklamanız\n- Özgünlüğü destekleyen belgeler (varsa)\n\nBelirtilen süre içinde yanıt gelmemesi hâlinde makale reddedilecek ve gerektiğinde kurumunuz bilgilendirilecektir.\n\nSaygılarımızla, ODÜSOBİAD Editörlüğü` } },
 
@@ -331,7 +651,7 @@ dergipark.org.tr/odusobiad` } },
 </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><div class="brand"><div class="brand-badge">ODÜ</div><div class="brand-text"><div class="brand-name">ODÜSOBİAD</div><div class="brand-sub">Sosyal Bilimler Araştırmaları Dergisi</div></div></div><div class="header-divider"></div><div class="header-title">Editöryal Mesaj Bankası</div><span class="header-ver">v3.4 · 39 Şablon</span><div class="lang-toggle" id="langToggle"><button class="lang-btn" data-lang="en">EN</button><button class="lang-btn active" data-lang="tr">TR</button></div></div></header>
+<header class="site-header"><div class="header-inner"><div class="brand"><div class="brand-badge">ODÜ</div><div class="brand-text"><div class="brand-name">ODÜSOBİAD</div><div class="brand-sub">Sosyal Bilimler Araştırmaları Dergisi</div></div></div><div class="header-divider"></div><div class="header-title">Editöryal Mesaj Bankası</div><span class="header-ver">v3.5 · 47 Şablon</span><div class="lang-toggle" id="langToggle"><button class="lang-btn" data-lang="en">EN</button><button class="lang-btn active" data-lang="tr">TR</button></div></div></header>
 <div class="app"><aside class="sidebar"><div class="panel"><div class="panel-head">Arama</div><div class="search-wrap"><input class="search-input" id="searchInput" type="text" placeholder="Mesaj ara…" autocomplete="off"></div><div class="filter-group"><span class="filter-label">Bölüm</span><div class="filter-options" id="sectionFilters"></div></div><div class="filter-group"><span class="filter-label">Aşama</span><div class="filter-options" id="stageFilters"></div></div><div class="filter-group"><span class="filter-label">Uyumluluk</span><div class="filter-options" id="complianceFilters"></div></div><button class="clear-btn" id="clearBtn">✕ Filtreleri temizle</button></div></aside>
 <main class="main"><div class="stats-bar"><div class="stat-cell"><div class="stat-num" id="stTotal">—</div><div class="stat-lbl">Şablon</div></div><div class="stat-cell"><div class="stat-num">6</div><div class="stat-lbl">Bölüm</div></div><div class="stat-cell"><div class="stat-num" id="stStages">—</div><div class="stat-lbl">Aşama</div></div><div class="stat-cell"><div class="stat-num" id="stCope">—</div><div class="stat-lbl">COPE</div></div><div class="stat-cell"><div class="stat-num" id="stScopus">—</div><div class="stat-lbl">SCOPUS</div></div></div><div class="results-bar"><div class="results-count"><strong id="visibleCount">—</strong> şablon</div><div class="results-tags" id="activeTags"></div></div><div class="cards-grid" id="cardsGrid"></div></main></div>
 <div class="modal-overlay" id="modalOverlay"><div class="modal" id="modal"><div class="modal-header"><div class="modal-header-info"><div class="modal-badges" id="mBadges"></div><div class="modal-title" id="mTitle"></div></div><button class="modal-close" id="modalClose" title="Kapat">✕</button></div><div class="modal-tabs"><button class="modal-tab" data-pane="en">🇬🇧 English</button><button class="modal-tab active" data-pane="tr">🇹🇷 Türkçe</button></div><div class="modal-content"><div class="modal-pane" id="mpEn"></div><div class="modal-pane active" id="mpTr"></div></div><div class="modal-footer"><button class="btn-copy-full" id="mCopyFull">📋 Tam Mesajı Kopyala</button><button class="btn-copy-subject" id="mCopySubject">Konu Satırını Kopyala</button><span class="modal-note">[YER TUTUCU] → göndermeden önce doldurun</span></div></div></div>
