@@ -127,6 +127,15 @@
             align-items:center;
             flex-wrap:wrap;
         }
+        /* navLinks tek bir <span> içinde üretiliyor; flex konteyner olmazsa
+           dar ekranlarda satır kaydıramaz ve başlığı taşırır. */
+        #navLinks {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            gap:10px;
+            min-width:0;
+        }
         .nav a {
             transition:all 0.2s;
             cursor:pointer;
@@ -1812,8 +1821,11 @@
             overflow:hidden;
             box-shadow:var(--shadow);
         }
+        /* Dar ekranda tablo kırpılmasın, yatay kaydırılabilsin. */
+        .admin-table .table-scroll { overflow-x:auto; }
         .admin-table table {
             width:100%;
+            min-width:480px;
             border-collapse:collapse;
         }
         .admin-table th,
@@ -2565,6 +2577,7 @@
         </div>
         <div class="admin-table">
             <h3 style="padding:16px 20px 0;font-size:1rem;color:var(--text-primary);"><i class="fas fa-list"></i> Son İşlemler</h3>
+            <div class="table-scroll">
             <table>
                 <thead><tr><th>Kullanıcı</th><th>İşlem</th><th>Tarih</th><th>Durum</th></tr></thead>
                 <tbody>
@@ -2574,6 +2587,7 @@
                     <tr><td>Prof. Dr. Ayşe Demir</td><td>Profil Güncelledi</td><td>10:00</td><td><span class="admin-badge active">Başarılı</span></td></tr>
                 </tbody>
             </table>
+            </div>
         </div>
         <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
             <button class="btn-admin" onclick="showToast('📊 Rapor oluşturuluyor...', 'info')"><i class="fas fa-download"></i> Rapor Oluştur</button>
